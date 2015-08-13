@@ -1,0 +1,24 @@
+<web-app>
+	<servlet>
+		<servlet-name>myfirst</servlet-name>
+		<servlet-class>com.huangtao.FirstServlet</servlet-class>
+		<init-param>
+			<param-name>server</param-name>
+			<param-value>http://192.168.1.101:8080/</param-value>
+		</init-param>
+	</servlet>
+
+	<servlet>
+		<servlet-name>Log4jInit</servlet-name>
+		<servlet-class>com.huangtao.Log4jInit</servlet-class>
+		<init-param>
+			<param-name>log4j</param-name>
+			<param-value>/WEB-INF/classes/log4j.properties</param-value>
+		</init-param>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>myfirst</servlet-name>
+		<url-pattern>/yeah</url-pattern>
+	</servlet-mapping>
+</web-app>
